@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haniva Siti Vathinah_2120241_WPII_2.6D</title>
+    <style>
+        /*CSS Styles*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        #inputField{
+            padding: 10px;
+            font-size: 16px;
+        }
+        #displayArea{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Content-->
+    <input type="text" id="inputField" placeholder="Enter Text..">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea"></div>
+
+    <!-- Javascript Code-->
+    <script>
+        function displayText() {
+            // Get the input value
+            var inputText = document.getElementById("inputField").value;
+
+            // Get the display area
+            var displayArea = document.getElementById("displayArea");
+
+            //Display the input value
+            displayArea.innerText = inputText;
+        }
+    </script>
+</body>
+</html>
